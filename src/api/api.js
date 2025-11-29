@@ -48,10 +48,10 @@ function handleError(err) {
 export default {
   // Auth
   login(payload) {
-    return api.post('api/auth/login', payload).catch(handleError);
+    return api.post('/auth/login', payload).catch(handleError);
   },
   register(payload) {
-    return api.post('api/auth/register', payload).catch(handleError);
+    return api.post('/auth/register', payload).catch(handleError);
   },
   getPendingEmail() {
     return api.get('/api/auth/pending-email').catch(handleError);
