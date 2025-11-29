@@ -8,36 +8,36 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/LavaLust': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/LavaLust/, '/LavaLust')
       },
       '/api': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true
       },
       '/auth': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true
       },
       '/users': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true
       },
       '/post_section': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true
       },
       '/categories': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true
       },
       '/notifications': {
-        target: 'http://localhost:3002',
+        target: 'https://bfbackend-l9q7.onrender.com',
         changeOrigin: true
       },
       '/uploads': {
-    target: 'http://localhost:3002',
+    target: 'https://bfbackend-l9q7.onrender.com',
     changeOrigin: true
   }
     

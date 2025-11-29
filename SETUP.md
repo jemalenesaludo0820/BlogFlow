@@ -23,18 +23,18 @@ This will install:
 npm run dev
 ```
 
-The Vue app will run on `http://localhost:5173`
+The Vue app will run on `blog-flow-5frwklapm-jems-projects-5c3bca73.vercel.app`
 
 ### 3. Ensure LavaLust Backend is Running
 
-Make sure your LavaLust backend is running on `http://localhost:3002` (as configured in `LavaLust/app/config/config.php`)
+Make sure your LavaLust backend is running on `https://bfbackend-l9q7.onrender.com` (as configured in `LavaLust/app/config/config.php`)
 
 ### 4. Configure CORS (if needed)
 
 If you encounter CORS issues, you may need to add CORS headers to your LavaLust backend. Add this to your `LavaLust/index.php` or create a middleware:
 
 ```php
-header('Access-Control-Allow-Origin: http://localhost:5173');
+header('Access-Control-Allow-Origin: blog-flow-5frwklapm-jems-projects-5c3bca73.vercel.app');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');

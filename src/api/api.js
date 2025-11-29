@@ -8,7 +8,7 @@ const resolvedBackendBaseUrl = (() => {
 
   // When running Vite locally, talk directly to the bundled PHP server
   if (import.meta?.env?.DEV) {
-    return 'http://localhost:3002';
+    return 'https://bfbackend-l9q7.onrender.com';
   }
 
   // If this runs in a browser without explicit config, reuse the current origin
